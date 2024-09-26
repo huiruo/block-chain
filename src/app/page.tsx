@@ -1,16 +1,6 @@
 import Link from 'next/link'
 import styles from "./page.module.css";
-
-export const parentRoute = [
-  {
-    label: "about",
-    path: "/about",
-  },
-  {
-    label: "dashboard",
-    path: "/dashboard",
-  }
-]
+import { parentRoute } from '@/common/router';
 
 export default function Home() {
   return (

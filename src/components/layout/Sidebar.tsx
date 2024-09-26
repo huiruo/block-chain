@@ -32,6 +32,7 @@ export const Sidebar = ({ isMobile = false }: { isMobile?: boolean }) => {
 
   return (
     <Box
+      component='nav'
       sx={{
         display: 'flex',
         flexDirection: 'column',

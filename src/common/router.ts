@@ -7,6 +7,10 @@ interface IParentRoute extends IRoute {
   children: IRoute[] | null
 }
 
+const crypto: IRoute[] = [
+  { path: "/btcAddress", label: "Btc Address" },
+];
+
 export const parentRoute: IParentRoute[] = [
   {
     label: "about",
@@ -17,5 +21,10 @@ export const parentRoute: IParentRoute[] = [
     label: "dashboard",
     path: "/dashboard",
     children: null
+  },
+  {
+    label: "crypto",
+    path: "/crypto",
+    children: crypto
   }
 ]

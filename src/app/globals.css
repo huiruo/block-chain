@@ -106,3 +106,43 @@ a {
     color-scheme: dark;
   }
 }
+
+pre {
+  width: 100%;
+  overflow-x: auto;
+  background-color: #eeeff0;
+  /* background-color: #313131; */
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+.navLink {
+  display: flex;
+  align-items: center;
+  height: 30px;
+  border-radius: 4px;
+  text-decoration: none;
+  /* color: #FFF; */
+}
+
+.navLink-c {
+  cursor: pointer;
+  padding: 6px 0 0 16px;
+}
+
+.navLink-r {
+  padding: 3px 0 3px 0;
+}
+
+.img-box {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}

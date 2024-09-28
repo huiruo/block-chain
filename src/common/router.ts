@@ -9,6 +9,7 @@ interface IParentRoute extends IRoute {
 
 const crypto: IRoute[] = [
   { path: "/btcAddress", label: "Btc Address" },
+  { path: "/meme", label: "Meme trade" },
 ];
 
 export const parentRoute: IParentRoute[] = [

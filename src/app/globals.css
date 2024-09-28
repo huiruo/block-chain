@@ -107,6 +107,15 @@ a {
   }
 }
 
+p {
+  margin: 0;
+  padding: 0;
+  white-space: break-spaces;
+  word-wrap: break-word; /* 允许长单词或 URL 换行 */
+  word-break: break-all; /* 强制长单词在任意位置换行 */
+  overflow-wrap: break-word; /* 允许内容换行 */
+}
+
 pre {
   width: 100%;
   overflow-x: auto;

@@ -1,8 +1,10 @@
 'use client';
 
 import { Box, createTheme } from "@mui/system";
-import { ReactNode, useEffect, useState } from "react";
+import { ReactNode, useEffect, useMemo, useState } from "react";
 import { Sidebar } from "./Sidebar";
+import { DrawerProvider } from "../drawer/drawerContext";
+import { Nav } from "./Nav";
 
 interface Props {
   children: ReactNode;
@@ -35,27 +37,29 @@ const theme = createTheme({
 
 
 export const Layout = ({ children }: Props) => {
-  const [isMobile, setIsMobile] = useState(false);
+  const [isMobileResize, setIsMobileResize] = useState<0 | 1 | 2>(0);
 
-  // Set up window resize listener to determine if we're in mobile view
+
+  const isMobile = isMobileResize === 1 ? true : false
+
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth < theme.breakpoints.values.tablet);
+      setIsMobileResize(window.innerWidth < theme.breakpoints.values.tablet ? 1 : 2);
     };
 
-    // Call the function immediately to set the initial value
     handleResize();
 
-    // Add event listener
     window.addEventListener('resize', handleResize);
 
-    // Clean up the event listener on unmount
     return () => {
       window.removeEventListener('resize', handleResize);
     };
   }, []);
 
-  console.log('%c=isMobile', 'color:red', isMobile);
+
+  if (isMobileResize === 0) {
+    return null
+  }
 
   return <Box sx={{
     display: 'flex',
@@ -64,9 +68,9 @@ export const Layout = ({ children }: Props) => {
     minHeight: '100vh',
     width: '100%',
   }}>
-    {/* <DrawerProvider>
+    <DrawerProvider>
       <Nav isMobile={isMobile} />
-    </DrawerProvider> */}
+    </DrawerProvider>
 
     <Box sx={{
       display: 'flex',
@@ -85,6 +89,8 @@ export const Layout = ({ children }: Props) => {
           flexBasis: '0',
           overflow: 'auto',
           pl: '20px',
+          mt: '50px',
+          pb: '20px'
         }}>
         {children}
       </Box>

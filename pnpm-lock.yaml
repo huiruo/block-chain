@@ -20,6 +20,9 @@ dependencies:
   '@mui/system':
     specifier: ^6.1.1
     version: 6.1.1(@emotion/react@11.13.3)(@emotion/styled@11.13.0)(@types/react@18.3.9)(react@18.3.1)
+  clsx:
+    specifier: ^2.1.1
+    version: 2.1.1
   lucide-react:
     specifier: ^0.446.0
     version: 0.446.0(react@18.3.1)

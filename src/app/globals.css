@@ -155,3 +155,30 @@ ul {
   width: 100%;
   justify-content: center;
 }
+
+.wrapper-box {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.wrapper-container {
+  display: flex;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.md-box {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0;
+  overflow: auto;
+  padding-left: 20px;
+  margin-top: 50px;
+  padding-top: 20px;
+}

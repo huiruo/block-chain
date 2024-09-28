@@ -1,11 +1,11 @@
 import React from 'react';
-import { Layout } from '../../../components/layout';
 import BtcAddress from '../../../mdx/crypto/btc地址监控.mdx';
+import { LayoutWrapper } from '@/components/layout/layoutWrapper';
 
 const Page: React.FC = () => {
-  return <Layout>
+  return <LayoutWrapper>
     <BtcAddress />
-  </Layout>
+  </LayoutWrapper>
 };
 
 export default Page

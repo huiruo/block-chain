@@ -1,11 +1,11 @@
 import React from 'react';
-import { Layout } from '../../../components/layout';
+import { LayoutWrapper } from '@/components/layout/layoutWrapper';
 import Meme from '../../../mdx/crypto/meme.mdx';
 
 const Page: React.FC = () => {
-  return <Layout>
+  return <LayoutWrapper>
     <Meme />
-  </Layout>
+  </LayoutWrapper>
 };
 
 export default Page

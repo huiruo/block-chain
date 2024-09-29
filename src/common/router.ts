@@ -14,19 +14,13 @@ const crypto: IRoute[] = [
 
 export const parentRoute: IParentRoute[] = [
   {
-    label: "about",
-    path: "/about",
-    children: null
-  },
-  {
     label: "dashboard",
     path: "/dashboard",
     children: null
   },
   {
     label: "crypto",
-    // path: "/crypto",
-    path: "",
+    path: "/crypto",
     children: crypto
   }
 ]

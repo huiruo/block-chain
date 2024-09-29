@@ -1,9 +1,9 @@
 import styles from "./page.module.css";
-import { Layout } from '../components/layout';
+import { LayoutWrapper } from "@/components/layout/layoutWrapper";
 
 export default function Home() {
-  return <Layout>
+  return <LayoutWrapper>
     <main className={styles.main}>
     </main>
-  </Layout>
+  </LayoutWrapper>
 }

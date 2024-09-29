@@ -1,10 +1,7 @@
-import React from 'react';
-import { Layout } from '../../components/layout';
+import { LayoutWrapper } from "@/components/layout/layoutWrapper";
 
-const Dashboard: React.FC = () => {
-  return <Layout>
-    <h1>Dashboard</h1>
-  </Layout>
-};
-
-export default Dashboard
+export default function Home() {
+  return <LayoutWrapper>
+    dashboard
+  </LayoutWrapper>
+}

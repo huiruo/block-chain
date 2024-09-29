@@ -25,7 +25,8 @@ export const parentRoute: IParentRoute[] = [
   },
   {
     label: "crypto",
-    path: "/crypto",
+    // path: "/crypto",
+    path: "",
     children: crypto
   }
 ]

@@ -1,6 +1,6 @@
-import React from 'react';
-import { Layout } from '../../components/layout';
+import { LayoutWrapper } from "@/components/layout/layoutWrapper";
 
+<<<<<<< HEAD
 const Dashboard: React.FC = () => {
 
   return <div className='wrapper-box'>
@@ -14,3 +14,10 @@ const Dashboard: React.FC = () => {
 };
 
 export default Dashboard
+=======
+export default function Home() {
+  return <LayoutWrapper>
+    dashboard
+  </LayoutWrapper>
+}
+>>>>>>> 74ba2008fa5009e2244dd6de9d6edf682ce4c9d2

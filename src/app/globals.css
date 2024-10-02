@@ -107,6 +107,14 @@ a {
   }
 }
 
+h2 {
+  margin: 16px 0px 4px 0px; 
+}
+
+h3 { 
+  margin: 10px 0px 4px 0px; 
+}
+
 p {
   margin: 0;
   padding: 0;

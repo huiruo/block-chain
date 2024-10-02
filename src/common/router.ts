@@ -10,14 +10,18 @@ interface IParentRoute extends IRoute {
 const crypto: IRoute[] = [
   { path: "/btcAddress", label: "Btc Address" },
   { path: "/meme", label: "Meme trade" },
+  { path: "/tech1", label: "tech1" },
+];
+
+const trader: IRoute[] = [
+  { path: "/invest", label: "invest" },
+];
+
+const thinking: IRoute[] = [
+  { path: "/thinking1", label: "thinking 1" },
 ];
 
 export const parentRoute: IParentRoute[] = [
-  {
-    label: "about",
-    path: "/about",
-    children: null
-  },
   {
     label: "dashboard",
     path: "/dashboard",
@@ -25,8 +29,17 @@ export const parentRoute: IParentRoute[] = [
   },
   {
     label: "crypto",
-    // path: "/crypto",
-    path: "",
+    path: "/crypto",
     children: crypto
-  }
+  },
+  {
+    label: "trader",
+    path: "/trader",
+    children: trader
+  },
+  {
+    label: "thinking",
+    path: "/thinking",
+    children: thinking
+  },
 ]

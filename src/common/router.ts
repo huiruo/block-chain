@@ -15,6 +15,7 @@ const crypto: IRoute[] = [
 
 const trader: IRoute[] = [
   { path: "/invest", label: "invest" },
+  { path: "/banFurture", label: "banFurture" },
 ];
 
 const thinking: IRoute[] = [

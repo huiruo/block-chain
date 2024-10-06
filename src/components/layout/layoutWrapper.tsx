@@ -10,7 +10,9 @@ export const LayoutWrapper = ({children}:Props)=>{
     <div className='wrapper-container'>
       <Layout />
       <div className='md-box'>
-        {children}
+        <div className="md-container">
+          {children}
+        </div>
       </div>
     </div>
   </div>

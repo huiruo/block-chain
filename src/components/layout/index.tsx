@@ -38,7 +38,6 @@ const theme = createTheme({
 export const Layout = () => {
   const [isMobileResize, setIsMobileResize] = useState<0 | 1 | 2>(0);
 
-
   const isMobile = isMobileResize === 1 ? true : false
 
   useEffect(() => {

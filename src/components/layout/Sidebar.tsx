@@ -1,10 +1,11 @@
 'use client';
 
 import { Box, styled } from "@mui/system";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Link from 'next/link'
 import { parentRoute } from '@/common/router';
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import { usePathname } from "next/navigation";
 
 interface StyledBoxProps {
   isActive: boolean;
@@ -20,6 +21,8 @@ export const Sidebar = ({ isMobile = false }: { isMobile?: boolean }) => {
   const [isOpen, setIsOpen] = useState(true);
   const [openParent, setOpenParent] = useState<string | null>(null);
 
+  const pathname = usePathname();
+
   const handleToggleSidebar = () => {
     setIsOpen(!isOpen);
   };
@@ -29,6 +32,18 @@ export const Sidebar = ({ isMobile = false }: { isMobile?: boolean }) => {
   };
 
   const SIDEBAR_WIDTH = isMobile ? '100%' : isOpen ? '10%' : '0px';
+
+  const getParentRoute = (path: string): string => {
+    const match = path.match(/^\/[^/]+/);
+    return match ? match[0] : "";
+  }
+
+  useEffect(() => {
+    const parentRoute = getParentRoute(pathname)
+    if (parentRoute) {
+      setOpenParent(parentRoute)
+    }
+  }, [pathname]);
 
   return (
     <Box

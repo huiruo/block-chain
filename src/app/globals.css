@@ -146,7 +146,6 @@ ul {
   height: 30px;
   border-radius: 4px;
   text-decoration: none;
-  /* color: #FFF; */
 }
 
 .navLink-c {
@@ -155,7 +154,8 @@ ul {
 }
 
 .navLink-r {
-  padding: 3px 0 3px 0;
+  padding: 3px 22px 3px 22px;
+  color: black;
 }
 
 .img-box {

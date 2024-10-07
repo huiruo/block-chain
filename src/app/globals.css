@@ -141,6 +141,7 @@ ul {
 .navLink-c {
   cursor: pointer;
   padding: 6px 0 0 16px;
+  color: black;
 }
 
 .navLink-r {
@@ -190,4 +191,25 @@ ul {
   padding-top: 50px;
   padding-bottom: 20px;
   padding-right: 8px;
+}
+
+.render-img {
+  width: auto;
+  height: auto;
+}
+
+.layout-container {
+  background: yellow;
+  width: 190px;
+}
+
+@media screen and (max-width: 768px) { 
+  .render-img {
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  .layout-container {
+    width: 0px;
+  }
 }

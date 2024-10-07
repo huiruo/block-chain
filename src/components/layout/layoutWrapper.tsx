@@ -8,7 +8,9 @@ interface Props {
 export const LayoutWrapper = ({children}:Props)=>{
   return <div className='wrapper-box'>
     <div className='wrapper-container'>
-      <Layout />
+      <div className='layout-container'>
+        <Layout />
+      </div>
       <div className='md-box'>
         <div className="md-container">
           {children}

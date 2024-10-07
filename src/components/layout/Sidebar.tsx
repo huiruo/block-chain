@@ -47,26 +47,18 @@ export const Sidebar = ({ isMobile = false }: { isMobile?: boolean }) => {
 
   return (
     <Box
-      component='nav'
+      component='div'
       sx={{
         display: 'flex',
         flexDirection: 'column',
         position: 'relative',
         width: SIDEBAR_WIDTH,
+        height: '100vh',
         minWidth: isOpen ? '190px' : SIDEBAR_WIDTH,
         transition: 'width 0.3s',
-        background: '#f1f2f6',
-        paddingTop: {
-          mobile: '20px',
-          tablet: '0px',
-          desktop: '0px',
-        },
-        paddingBottom: {
-          mobile: '100px',
-        },
         boxSizing: 'border-box',
-        height: '100vh',
         overflow: 'auto',
+        background: '#f1f2f6',
       }}
     >
       {!isMobile && (

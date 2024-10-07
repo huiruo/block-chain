@@ -35,7 +35,7 @@ const candleNew: IRoute[] = [
   { path: "/excerpt", label: "节选" },
   { path: "/body", label: "实体" },
   { path: "/spindle", label: "纺锤线" },
-  { path: "/crosshairs", label: "十字线" },
+  { path: "/crosshairs", label: "十字星" },
   { path: "/shadow", label: "上下影线" },
   { path: "/hammer", label: "锤子线" },
   { path: "/meteor", label: "流星线" },
@@ -50,7 +50,7 @@ const candleNew: IRoute[] = [
 const candleTech: IRoute[] = [
   { path: "/excerpt", label: "节选" },
   { path: "/reversal", label: "反转形态" },
-  { path: "/crosshairs", label: "十字线" },
+  { path: "/crosshairs", label: "十字星" },
   { path: "/spindleLine", label: "纺锤线" },
   { path: "/umbrella1", label: "伞形线之锤子线" },
   { path: "/umbrella2", label: "伞形线之上吊线" },

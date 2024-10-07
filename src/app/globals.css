@@ -183,6 +183,7 @@ ul {
   overflow: auto;
   overflow: auto;
   height: 100%;
-  padding-top: 34px;
+  padding-top: 50px;
+  padding-bottom: 20px;
   padding-right: 8px;
 }

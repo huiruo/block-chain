@@ -71,7 +71,7 @@ export const Sidebar = ({ isMobile = false }: { isMobile?: boolean }) => {
     >
       {!isMobile && (
         <>
-          <BlankBox />
+          <Box sx={{ mt: '50px' }} />
           <Box
             sx={{ position: 'absolute', zIndex: 1, left: '2px', bottom: '0px', cursor: 'pointer' }}
             onClick={handleToggleSidebar}
@@ -95,14 +95,21 @@ export const Sidebar = ({ isMobile = false }: { isMobile?: boolean }) => {
                     {parent.label}
                   </StyledBox>
                 ) : (
-                  <Link key={parent.path} className="navLink navLink-c" href={parent.path}>
+                  <Link
+                    key={parent.path}
+                    href={parent.path}
+                    className={`navLink navLink-c ${parent.path === pathname ? 'navLink-ac' : null}`}
+                  >
                     {parent.label}
                   </Link>
                 )}
 
                 {openParent === parent.path &&
                   parent.children?.map((child) => (
-                    <Link key={child.path} className="navLink navLink-r" href={parent.path + '/' + child.path}>
+                    <Link key={child.path} 
+                      className={`navLink navLink-r ${`${parent.path}${child.path}` === pathname ? 'navLink-ac' : null}`}
+                      href={parent.path + child.path}
+                    >
                       {child.label}
                     </Link>
                   ))}
@@ -112,8 +119,4 @@ export const Sidebar = ({ isMobile = false }: { isMobile?: boolean }) => {
       )}
     </Box>
   );
-};
-
-const BlankBox = () => {
-  return <Box sx={{ mt: '50px' }} />;
 };

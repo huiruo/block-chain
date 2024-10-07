@@ -148,6 +148,10 @@ ul {
   color: black;
 }
 
+.navLink-ac {
+  color: #321bf9;
+}
+
 .img-box {
   display: flex;
   width: 100%;

@@ -199,8 +199,15 @@ ul {
 }
 
 .layout-container {
-  background: yellow;
   width: 190px;
+}
+
+.linkRender {
+  color: #199936;
+}
+
+.linkRender:hover {
+  text-decoration: underline; 
 }
 
 @media screen and (max-width: 768px) { 

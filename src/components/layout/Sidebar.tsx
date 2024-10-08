@@ -90,7 +90,7 @@ export const Sidebar = ({ isMobile = false }: { isMobile?: boolean }) => {
                   <Link
                     key={parent.path}
                     href={parent.path}
-                    className={`navLink navLink-c ${parent.path === pathname ? 'navLink-ac' : null}`}
+                    className={`navLink navLink-c ${parent.path === pathname ? 'navLink-ac' : ''}`}
                   >
                     {parent.label}
                   </Link>
@@ -99,7 +99,7 @@ export const Sidebar = ({ isMobile = false }: { isMobile?: boolean }) => {
                 {openParent === parent.path &&
                   parent.children?.map((child) => (
                     <Link key={child.path} 
-                      className={`navLink navLink-r ${`${parent.path}${child.path}` === pathname ? 'navLink-ac' : null}`}
+                      className={`navLink navLink-r ${`${parent.path}${child.path}` === pathname ? 'navLink-ac' : ''}`}
                       href={parent.path + child.path}
                     >
                       {child.label}

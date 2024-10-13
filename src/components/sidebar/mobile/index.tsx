@@ -1,12 +1,13 @@
+import { ISidebar } from "@/common/router"
+
 interface Props {
-  path?: string
-  sidebar?: string
-  className?: string
+  activePath: string
+  sidebar: ISidebar[]
 }
 
-export function DocSidebarMobileSecondaryMenu({ path, sidebar, className }: Props) {
+export function DocSidebarMobileMenu({ activePath, sidebar }: Props) {
 
   return <div>
-    DocSidebarMobileSecondaryMenu
+    DocSidebarMobileMenu
   </div>
 }

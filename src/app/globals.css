@@ -178,7 +178,15 @@ ul {
   }
 
   .sidebar-container {
-    width: 0px;
+    display: none !important;
+  }
+
+  .md-container {
+    padding-left: 10px !important;
+  }
+
+  .sidebar-content {
+    padding-top: 10px !important;
   }
 }
 
@@ -211,6 +219,10 @@ ul {
 }
 
 .sidebar-container {
+  display: block;
+}
+
+.sidebarMobile-container {
   display: block;
 }
 

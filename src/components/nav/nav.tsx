@@ -2,12 +2,15 @@
 
 import { Box } from "@mui/system";
 import { Menu } from "lucide-react";
-import { Sidebar } from "../sidebar";
 import { useDrawerContext } from "../drawer/drawerContext";
 import { Drawer } from "../drawer";
+import { DocSidebarDesktop } from "../sidebar/desktop";
+import { usePathname } from 'next/navigation'
+import { sidebar } from "@/common/router";
 
 export const Nav = ({ isMobile }: { isMobile: boolean }) => {
   const { toggleDrawer } = useDrawerContext();
+  const activePath = usePathname()
 
   return (
     <nav className="nav">
@@ -36,10 +39,12 @@ export const Nav = ({ isMobile }: { isMobile: boolean }) => {
         />
       </Box>
 
-      {/* 其他导航内容 */}
-
       <Drawer anchor={"left"} id="NavDrawer" width={220}>
-        {isMobile && <Sidebar isMobile={isMobile} />}
+        {isMobile && <div className='sidebarMobile-container'>
+          <aside className="sidebar-content">
+            <DocSidebarDesktop activePath={activePath} sidebar={sidebar} />
+          </aside>
+        </div>}
       </Drawer>
     </nav>
   );

@@ -49,11 +49,6 @@ export const NavWrapper = () => {
     };
   }, []);
 
-
-  // if (isMobileResize === 0) {
-  //   return null
-  // }
-
   return <>
     <DrawerProvider>
       <Nav isMobile={isMobile} />

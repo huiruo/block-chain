@@ -2,13 +2,8 @@
 
 import { createTheme } from "@mui/system";
 import { useEffect, useState } from "react";
-import { Sidebar } from "./Sidebar";
 import { DrawerProvider } from "../drawer/drawerContext";
-import { Nav } from "./Nav";
-
-interface Props {
-  // children: ReactNode;
-}
+import { Nav } from "./nav";
 
 declare module '@mui/system' {
   interface BreakpointOverrides {
@@ -35,7 +30,7 @@ const theme = createTheme({
   },
 });
 
-export const Layout = () => {
+export const NavWrapper = () => {
   const [isMobileResize, setIsMobileResize] = useState<0 | 1 | 2>(0);
 
   const isMobile = isMobileResize === 1 ? true : false
@@ -63,6 +58,5 @@ export const Layout = () => {
     <DrawerProvider>
       <Nav isMobile={isMobile} />
     </DrawerProvider>
-    {!isMobile && <Sidebar isMobile={isMobile} />}
   </>
 }

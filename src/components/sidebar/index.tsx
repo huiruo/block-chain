@@ -1,0 +1,19 @@
+'use client';
+
+import { usePathname } from 'next/navigation'
+import { DocSidebarDesktop } from './desktop'
+import { sidebar } from '@/common/router'
+
+export const Sidebar = ({ isMobile = false }: { isMobile?: boolean }) => {
+  const activePath = usePathname()
+
+  return (
+    <div className='sidebar-container'>
+      <aside className="sidebar-content">
+        <div className='sidebar-wrap'>
+          <DocSidebarDesktop activePath={activePath} sidebar={sidebar} />
+        </div>
+      </aside>
+    </div>
+  )
+}

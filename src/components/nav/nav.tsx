@@ -2,7 +2,7 @@
 
 import { Box } from "@mui/system";
 import { Menu } from "lucide-react";
-import { Sidebar } from "./Sidebar";
+import { Sidebar } from "../sidebar";
 import { useDrawerContext } from "../drawer/drawerContext";
 import { Drawer } from "../drawer";
 
@@ -10,23 +10,7 @@ export const Nav = ({ isMobile }: { isMobile: boolean }) => {
   const { toggleDrawer } = useDrawerContext();
 
   return (
-    <Box
-      component={"nav"}
-      sx={{
-        position: "fixed",
-        top: 0,
-        left: 0,
-        width: "100%",
-        height: "50px",
-        display: "flex",
-        justifyContent: "space-between",
-        alignItems: "center",
-        boxSizing: "border-box",
-        background: "#e4e8ec",
-        padding: "0 20px",
-        zIndex: 1000,
-      }}
-    >
+    <nav className="nav">
       <Box sx={{ display: "flex", alignItems: "center" }}>
         {isMobile && (
           <Box
@@ -57,6 +41,6 @@ export const Nav = ({ isMobile }: { isMobile: boolean }) => {
       <Drawer anchor={"left"} id="NavDrawer" width={220}>
         {isMobile && <Sidebar isMobile={isMobile} />}
       </Drawer>
-    </Box>
+    </nav>
   );
 };

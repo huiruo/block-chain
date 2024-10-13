@@ -72,15 +72,14 @@
 html,
 body {
   max-width: 100vw;
-  overflow-x: hidden;
-  min-height: 100vh;
+  height: 100%;
 }
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(to bottom,
+  /* background: linear-gradient(to bottom,
       transparent,
-      rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
+      rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb)); */
 }
 
 a {
@@ -159,47 +158,9 @@ ul {
   justify-content: center;
 }
 
-.wrapper-box {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  min-height: 100vh;
-  width: 100%;
-}
-
-.wrapper-container {
-  display: flex;
-  flex-grow: 1;
-  flex-shrink: 1;
-  flex-basis: 0;
-  height: 100%;
-  width: 100%;
-}
-
-.md-box {
-  flex-grow: 1;
-  flex-shrink: 1;
-  flex-basis: 0;
-  padding-left: 20px;
-  height: 100vh;
-}
-
-.md-container {
-  overflow: auto;
-  overflow: auto;
-  height: 100%;
-  padding-top: 50px;
-  padding-bottom: 20px;
-  padding-right: 8px;
-}
-
 .render-img {
   width: auto;
   height: auto;
-}
-
-.layout-container {
-  width: 190px;
 }
 
 .linkRender {
@@ -207,16 +168,68 @@ ul {
 }
 
 .linkRender:hover {
-  text-decoration: underline; 
+  text-decoration: underline;
 }
 
-@media screen and (max-width: 768px) { 
+@media screen and (max-width: 768px) {
   .render-img {
     width: 100% !important;
     height: auto !important;
   }
 
-  .layout-container {
+  .sidebar-container {
     width: 0px;
   }
+}
+
+.flex {
+  display: flex;
+}
+
+
+.nav {
+  position: sticky;
+  top: 0;
+  height: 50px;
+  background: #e4e8ec;
+  z-index: 88899;
+}
+
+.wrapper-box {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.main-container {
+  display: flex;
+  width: 100%;
+  flex: 1 0;
+  min-height: 100%;
+}
+
+.sidebar-container {
+  display: block;
+  margin-top: -60px;
+}
+
+.sidebar-content {
+  top: 0;
+  position: sticky;
+  height: 100%;
+  max-height: 100vh;
+  width: 280px;
+}
+
+.sidebar-wrap {
+  height: 100vh;
+  padding-top: 60px;
+  background: linear-gradient(to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
+}
+
+.md-container {
+  padding-bottom: 20px;
+  padding-left: 20px;
 }

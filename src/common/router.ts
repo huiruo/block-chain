@@ -1,116 +1,109 @@
-interface IRoute {
-  path: string;
-  label: string;
+export interface ISidebar {
+  href: string
+  label: string
+  type?: 'category' | 'link'
+  items?: ISidebar[]
 }
 
-interface IParentRoute extends IRoute {
-  children: IRoute[] | null
-}
-
-const crypto: IRoute[] = [
-  { path: "/btcAddress", label: "Btc Address" },
-  { path: "/meme", label: "Meme trade" },
-  { path: "/tech1", label: "tech1" },
-];
-
-const trader: IRoute[] = [
-  { path: "/invest", label: "invest" },
-  { path: "/banFurture", label: "banFurture" },
-];
-
-const trader2: IRoute[] = [
-  { path: "/neverWrong", label: "neverWrong" },
-  { path: "/opportunity", label: "opportunity" },
-  { path: "/stopLoss", label: "stopLoss" },
-  { path: "/volume", label: "volume" },
-  { path: "/history", label: "history" },
-];
-
-const thinking: IRoute[] = [
-  { path: "/thinking1", label: "thinking 1" },
-];
-
-const candleNew: IRoute[] = [
-  { path: "/trend", label: "趋势" },
-  { path: "/excerpt", label: "节选" },
-  { path: "/body", label: "实体" },
-  { path: "/spindle", label: "纺锤线" },
-  { path: "/crosshairs", label: "十字星" },
-  { path: "/shadow", label: "上下影线" },
-  { path: "/hammer", label: "锤子线" },
-  { path: "/meteor", label: "流星线" },
-  { path: "/darkClouds", label: "乌云盖顶" },
-  { path: "/pierce", label: "刺穿形态" },
-  { path: "/swallow", label: "吞噬形态" },
-  { path: "/pregnant", label: "包孕形态" },
-  { path: "/dusk", label: "黄昏星" },
-  { path: "/venus", label: "启明星" },
-];
-
-const candleTech: IRoute[] = [
-  { path: "/excerpt", label: "节选" },
-  { path: "/reversal", label: "反转形态" },
-  { path: "/crosshairs", label: "十字星" },
-  { path: "/spindleLine", label: "纺锤线" },
-  { path: "/umbrella1", label: "伞形线之锤子线" },
-  { path: "/umbrella2", label: "伞形线之上吊线" },
-  { path: "/tunMo", label: "吞没形态" },
-  { path: "/darkClouds", label: "乌云盖顶" },
-  { path: "/piercing", label: "刺透形态" },
-  { path: "/starLine", label: "星线" },
-  { path: "/starLine2", label: "星线-启明星" },
-  { path: "/starLine3", label: "星线-流星-倒锤线" },
-  { path: "/starLine4", label: "星线-黄昏星" },
-  { path: "/pregnant", label: "孕线" },
-  { path: "/flatHead", label: "平头顶部-平头底部" },
-  { path: "/grabBelt", label: "捉腰带线" },
-  { path: "/threeCrows", label: "三只乌鸦" },
-  { path: "/twoCrows", label: "向上跳空两只乌鸦" },
-  { path: "/threeSoldiers", label: "白色三兵挺进" },
-  { path: "/threeMountains", label: "三山形态-三川形态" },
-  { path: "/fightingBack", label: "反击线形态" },
-  { path: "/roundTop", label: "圆形顶部-平底锅底部" },
-  { path: "/tower", label: "塔形顶部-塔形底部" },
-  { path: "/window", label: "窗口" },
-  { path: "/riseDown", label: "上升-下降" },
-  { path: "/breakup", label: "分手线" },
-  { path: "/candleVolume", label: "蜡烛图与交易量" },
-];
-
-export const parentRoute: IParentRoute[] = [
+export const sidebar: ISidebar[] = [
   {
-    label: "dashboard",
-    path: "/dashboard",
-    children: null
+    label: 'dashboard',
+    href: '/dashboard',
   },
   {
-    label: "crypto",
-    path: "/crypto",
-    children: crypto
+    label: 'crypto',
+    href: '/crypto',
+    type: 'category',
+    items: [
+      { href: "/crypto/btcAddress", label: "Btc Address" },
+      { href: "/crypto/meme", label: "Meme trade" },
+      { href: "/crypto/tech1", label: "tech1" },
+    ]
   },
   {
-    label: "trader",
-    path: "/trader",
-    children: trader
+    label: 'trader',
+    href: '/trader',
+    type: 'category',
+    items: [
+      { href: "/trader/invest", label: "invest" },
+      { href: "/trader/banFurture", label: "banFurture" },
+    ]
   },
   {
-    label: "trader2",
-    path: "/trader2",
-    children: trader2
+    label: 'trader2',
+    href: '/trader2',
+    type: 'category',
+    items: [
+      { href: "/trader2/neverWrong", label: "neverWrong" },
+      { href: "/trader2/opportunity", label: "opportunity" },
+      { href: "/trader2/stopLoss", label: "stopLoss" },
+      { href: "/trader2/volume", label: "volume" },
+      { href: "/trader2/history", label: "history" },
+    ]
   },
   {
-    label: "thinking",
-    path: "/thinking",
-    children: thinking
+    label: 'thinking',
+    href: '/thinking',
+    type: 'category',
+    items: [
+      { href: "/thinking/thinking1", label: "thinking 1" },
+    ]
+  },
+
+  {
+    label: 'Candle tech',
+    href: '/candleTech',
+    type: 'category',
+    items: [
+      { href: "/candleTech/excerpt", label: "节选" },
+      { href: "/candleTech/reversal", label: "反转形态" },
+      { href: "/candleTech/crosshairs", label: "十字星" },
+      { href: "/candleTech/spindleLine", label: "纺锤线" },
+      { href: "/candleTech/umbrella1", label: "伞形线之锤子线" },
+      { href: "/candleTech/umbrella2", label: "伞形线之上吊线" },
+      { href: "/candleTech/tunMo", label: "吞没形态" },
+      { href: "/candleTech/darkClouds", label: "乌云盖顶" },
+      { href: "/candleTech/piercing", label: "刺透形态" },
+      { href: "/candleTech/starLine", label: "星线" },
+      { href: "/candleTech/starLine2", label: "星线-启明星" },
+      { href: "/candleTech/starLine3", label: "星线-流星-倒锤线" },
+      { href: "/candleTech/starLine4", label: "星线-黄昏星" },
+      { href: "/candleTech/pregnant", label: "孕线" },
+      { href: "/candleTech/flatHead", label: "平头顶部-平头底部" },
+      { href: "/candleTech/grabBelt", label: "捉腰带线" },
+      { href: "/candleTech/threeCrows", label: "三只乌鸦" },
+      { href: "/candleTech/twoCrows", label: "向上跳空两只乌鸦" },
+      { href: "/candleTech/threeSoldiers", label: "白色三兵挺进" },
+      { href: "/candleTech/threeMountains", label: "三山形态-三川形态" },
+      { href: "/candleTech/fightingBack", label: "反击线形态" },
+      { href: "/candleTech/roundTop", label: "圆形顶部-平底锅底部" },
+      { href: "/candleTech/tower", label: "塔形顶部-塔形底部" },
+      { href: "/candleTech/window", label: "窗口" },
+      { href: "/candleTech/riseDown", label: "上升-下降" },
+      { href: "/candleTech/breakup", label: "分手线" },
+      { href: "/candleTech/candleVolume", label: "蜡烛图与交易量" },
+    ]
   },
   {
-    label: "Candle tech",
-    path: "/candleTech",
-    children: candleTech
-  },
-  {
-    label: "Candle new",
-    path: "/candleNew",
-    children: candleNew
+    label: 'Candle new',
+    href: '/candleNew',
+    type: 'category',
+    items: [
+      { href: "/trader/invest", label: "invest" },
+      { href: "/candleNew/trend", label: "趋势" },
+      { href: "/candleNew/excerpt", label: "节选" },
+      { href: "/candleNew/body", label: "实体" },
+      { href: "/candleNew/spindle", label: "纺锤线" },
+      { href: "/candleNew/crosshairs", label: "十字星" },
+      { href: "/candleNew/shadow", label: "上下影线" },
+      { href: "/candleNew/hammer", label: "锤子线" },
+      { href: "/candleNew/meteor", label: "流星线" },
+      { href: "/candleNew/darkClouds", label: "乌云盖顶" },
+      { href: "/candleNew/pierce", label: "刺穿形态" },
+      { href: "/candleNew/swallow", label: "吞噬形态" },
+      { href: "/candleNew/pregnant", label: "包孕形态" },
+      { href: "/candleNew/dusk", label: "黄昏星" },
+      { href: "/candleNew/venus", label: "启明星" },
+    ]
   },
 ]

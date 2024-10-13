@@ -1,7 +1,6 @@
-import { LayoutWrapper } from "@/components/layout/layoutWrapper";
 
 export default function Home() {
-  return <LayoutWrapper>
+  return <div>
     dashboard
-  </LayoutWrapper>
+  </div>
 }

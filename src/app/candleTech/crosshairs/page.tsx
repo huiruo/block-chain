@@ -1,11 +1,9 @@
 import React from 'react';
-import { LayoutWrapper } from '@/components/layout/layoutWrapper';
+
 import MdxComponent from '../../../mdx/trader2/蜡烛图技术/02-十字线.mdx';
 
 const Page: React.FC = () => {
-  return <LayoutWrapper>
-    <MdxComponent />
-  </LayoutWrapper>
+  return <MdxComponent />
 };
 
 export default Page

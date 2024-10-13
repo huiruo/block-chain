@@ -56,7 +56,7 @@ export const ItemCategory = ({ item, activePath }: Props) => {
 
   return <li>
     <div
-      className={clsx('flex cursor-pointer', styles.menuLink, {
+      className={clsx('flex', styles.menuLink, {
         [styles.menucaret]: collapsed,
       })}
       onClick={(e) => {
@@ -67,7 +67,7 @@ export const ItemCategory = ({ item, activePath }: Props) => {
       {item.label}
     </div>
 
-    <ul className="mt-1 pl-2">
+    <ul>
       {!collapsed && Array.isArray(item.items) && item.items.map((cell, i) => (
         <SidebarItem
           key={i}

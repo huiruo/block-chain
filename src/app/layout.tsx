@@ -21,6 +21,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <div className='wrapper-box'>
           <NavWrapper />
+
           <div className='main-container'>
             <Sidebar isMobile={false} />
             <main className="md-container">

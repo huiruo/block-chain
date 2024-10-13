@@ -9,7 +9,7 @@ interface Props {
 export function DocSidebarDesktop({ activePath, sidebar }: Props) {
 
   return <nav>
-    <ul>
+    <ul className="sidebar-ul">
       {sidebar.map((item, index) => (
         <SidebarItem
           key={index}

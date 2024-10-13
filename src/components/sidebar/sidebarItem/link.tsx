@@ -1,7 +1,3 @@
-// import { ISidebar } from "..";
-// import { cn } from "../../../lib/utils";
-// import Link from "../../Link";
-
 import { ISidebar } from "@/common/router";
 import Link from "next/link";
 
@@ -18,7 +14,9 @@ export const ItemLink = ({ item, activePath }: Props) => {
   return <li>
     <Link
       href={href}
-      // className={'block w-full',activePath === href && 'text-primary-500')}
+      style={{
+        color: activePath === href ? '#ec4899' : 'inherit'
+      }}
     >
       {label}
     </Link>

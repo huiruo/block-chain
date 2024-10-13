@@ -188,11 +188,13 @@ ul {
 
 
 .nav {
-  position: sticky;
+  /* position: sticky; */
+  position: fixed;
   top: 0;
   height: 50px;
   background: #e4e8ec;
   z-index: 88899;
+  width: 100%;
 }
 
 .wrapper-box {
@@ -210,26 +212,27 @@ ul {
 
 .sidebar-container {
   display: block;
-  margin-top: -60px;
+}
+
+.sidebar-ul {
+  padding-left: 10px;
+  list-style: none;
 }
 
 .sidebar-content {
   top: 0;
-  position: sticky;
+  position: fixed;
+  overflow: auto;
   height: 100%;
-  max-height: 100vh;
   width: 280px;
-}
-
-.sidebar-wrap {
   height: 100vh;
   padding-top: 60px;
+  padding-bottom: 20px;
   background: linear-gradient(to bottom,
       transparent,
       rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
 }
 
 .md-container {
-  padding-bottom: 20px;
-  padding-left: 20px;
+  padding: 50px 10px 20px 300px;
 }

@@ -8,12 +8,10 @@ export const Sidebar = ({ isMobile = false }: { isMobile?: boolean }) => {
   const activePath = usePathname()
 
   return (
-    <div className='sidebar-container'>
-      <aside className="sidebar-content">
-        <div className='sidebar-wrap'>
+      <div className='sidebar-container'>
+        <aside className="sidebar-content">
           <DocSidebarDesktop activePath={activePath} sidebar={sidebar} />
-        </div>
-      </aside>
-    </div>
+        </aside>
+      </div>
   )
 }

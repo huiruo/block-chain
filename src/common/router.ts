@@ -16,6 +16,7 @@ export const sidebar: ISidebar[] = [
     type: 'category',
     items: [
       { href: "/crypto/btcAddress", label: "Btc Address" },
+      { href: "/crypto/btcBelievers", label: "BTC Believers" },
       { href: "/crypto/meme", label: "Meme trade" },
       { href: "/crypto/tech1", label: "tech1" },
     ]

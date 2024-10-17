@@ -50,7 +50,6 @@ export const sidebar: ISidebar[] = [
       { href: "/thinking/thinking1", label: "thinking 1" },
     ]
   },
-
   {
     label: 'Candle tech',
     href: '/candleTech',
@@ -105,6 +104,14 @@ export const sidebar: ISidebar[] = [
       { href: "/candleNew/pregnant", label: "包孕形态" },
       { href: "/candleNew/dusk", label: "黄昏星" },
       { href: "/candleNew/venus", label: "启明星" },
+    ]
+  },
+  {
+    label: 'stock',
+    href: '/stock',
+    type: 'category',
+    items: [
+      { href: "/stock/analyze", label: "analyze" },
     ]
   },
 ]

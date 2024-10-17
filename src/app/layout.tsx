@@ -20,6 +20,7 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link data-rh="true" rel="icon" href="/logo.svg"></link>
       </head>
       <body className={inter.className}>
         <div className='wrapper-box'>
@@ -28,7 +29,10 @@ export default function RootLayout({
           <div className='main-container'>
             <Sidebar isMobile={false} />
             <main className="md-container">
-              {children}
+              <div className="empty-div" />
+              <article className="article">
+                {children}
+              </article>
             </main>
           </div>
         </div>

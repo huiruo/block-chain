@@ -14,7 +14,10 @@ export const Nav = ({ isMobile }: { isMobile: boolean }) => {
 
   return (
     <nav className="nav">
-      <Box sx={{ display: "flex", alignItems: "center" }}>
+      <Box sx={{
+        display: "flex", alignItems: "center",
+        height: '100%',
+      }}>
         {isMobile && (
           <Box
             onClick={() => toggleDrawer("NavDrawer")}
@@ -34,6 +37,7 @@ export const Nav = ({ isMobile }: { isMobile: boolean }) => {
           src="/logo.svg"
           width={40}
           sx={{
+            ml: '2px',
             borderRadius: "50%",
           }}
         />

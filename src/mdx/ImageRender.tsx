@@ -7,9 +7,9 @@ interface Props {
   height?: string
 }
 
-const ImageRender: React.FC<Props> = ({ path, alt, width = '100%', height = 'auto' }) => {
+const ImageRender: React.FC<Props> = ({ path, alt, width = '80%', height = 'auto' }) => {
   return <div className='img-box'>
-    <img alt={alt} src={path} style={{ width, height }} className='render-img' />
+    <img alt={alt} src={path} style={{ width: 'auto',maxWidth: width, height }} className='render-img' />
   </div>
 };
 

@@ -18,7 +18,7 @@ export const sidebar: ISidebar[] = [
       { href: "/crypto/btcAddress", label: "Btc Address" },
       { href: "/crypto/btcBelievers", label: "BTC Believers" },
       { href: "/crypto/meme", label: "Meme trade" },
-      { href: "/crypto/tech1", label: "tech1" },
+      { href: "/crypto/tech1", label: "Tech" },
     ]
   },
   {
@@ -26,8 +26,8 @@ export const sidebar: ISidebar[] = [
     href: '/trader',
     type: 'category',
     items: [
-      { href: "/trader/invest", label: "invest" },
-      { href: "/trader/banFurture", label: "banFurture" },
+      { href: "/trader/invest", label: "Invest" },
+      { href: "/trader/banFurture", label: "BanFurture" },
     ]
   },
   {
@@ -35,11 +35,11 @@ export const sidebar: ISidebar[] = [
     href: '/trader2',
     type: 'category',
     items: [
-      { href: "/trader2/neverWrong", label: "neverWrong" },
-      { href: "/trader2/opportunity", label: "opportunity" },
-      { href: "/trader2/stopLoss", label: "stopLoss" },
-      { href: "/trader2/volume", label: "volume" },
-      { href: "/trader2/history", label: "history" },
+      { href: "/trader2/neverWrong", label: "NeverWrong" },
+      { href: "/trader2/opportunity", label: "Opportunity" },
+      { href: "/trader2/stopLoss", label: "StopLoss" },
+      { href: "/trader2/volume", label: "Volume" },
+      { href: "/trader2/history", label: "History" },
     ]
   },
   {
@@ -47,7 +47,8 @@ export const sidebar: ISidebar[] = [
     href: '/thinking',
     type: 'category',
     items: [
-      { href: "/thinking/thinking1", label: "thinking 1" },
+      { href: "/thinking/tradeThinking", label: "Trade thinking" },
+      { href: "/thinking/thinking1", label: "Thinking" },
     ]
   },
   {
@@ -89,7 +90,7 @@ export const sidebar: ISidebar[] = [
     href: '/candleNew',
     type: 'category',
     items: [
-      { href: "/trader/invest", label: "invest" },
+      { href: "/trader/invest", label: "Invest" },
       { href: "/candleNew/trend", label: "趋势" },
       { href: "/candleNew/excerpt", label: "节选" },
       { href: "/candleNew/body", label: "实体" },
@@ -111,7 +112,7 @@ export const sidebar: ISidebar[] = [
     href: '/stock',
     type: 'category',
     items: [
-      { href: "/stock/analyze", label: "analyze" },
+      { href: "/stock/analyze", label: "Analyze" },
     ]
   },
 ]

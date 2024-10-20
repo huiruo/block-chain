@@ -7,11 +7,11 @@ export interface ISidebar {
 
 export const sidebar: ISidebar[] = [
   {
-    label: 'dashboard',
+    label: 'Dashboard',
     href: '/dashboard',
   },
   {
-    label: 'crypto',
+    label: 'Crypto',
     href: '/crypto',
     type: 'category',
     items: [
@@ -32,7 +32,7 @@ export const sidebar: ISidebar[] = [
     ]
   },
   {
-    label: 'trader',
+    label: 'Trader',
     href: '/trader',
     type: 'category',
     items: [
@@ -100,7 +100,7 @@ export const sidebar: ISidebar[] = [
     ]
   },
   {
-    label: 'stock',
+    label: 'Stock',
     href: '/stock',
     type: 'category',
     items: [

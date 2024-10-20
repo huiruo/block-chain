@@ -22,33 +22,25 @@ export const sidebar: ISidebar[] = [
     ]
   },
   {
+    label: 'Thinking',
+    href: '/thinking',
+    type: 'category',
+    items: [
+      { href: "/thinking/thinking1", label: "Thinking" },
+      { href: "/thinking/invest", label: "Invest" },
+      { href: "/thinking/banFurture", label: "BanFurture" },
+    ]
+  },
+  {
     label: 'trader',
     href: '/trader',
     type: 'category',
     items: [
-      { href: "/trader/invest", label: "Invest" },
-      { href: "/trader/banFurture", label: "BanFurture" },
-    ]
-  },
-  {
-    label: 'trader2',
-    href: '/trader2',
-    type: 'category',
-    items: [
-      { href: "/trader2/neverWrong", label: "NeverWrong" },
-      { href: "/trader2/opportunity", label: "Opportunity" },
-      { href: "/trader2/stopLoss", label: "StopLoss" },
-      { href: "/trader2/volume", label: "Volume" },
-      { href: "/trader2/history", label: "History" },
-    ]
-  },
-  {
-    label: 'thinking',
-    href: '/thinking',
-    type: 'category',
-    items: [
-      { href: "/thinking/tradeThinking", label: "Trade thinking" },
-      { href: "/thinking/thinking1", label: "Thinking" },
+      { href: "/trader/neverWrong", label: "NeverWrong" },
+      { href: "/trader/opportunity", label: "Opportunity" },
+      { href: "/trader/stopLoss", label: "StopLoss" },
+      { href: "/trader/volume", label: "Volume" },
+      { href: "/trader/history", label: "History" },
     ]
   },
   {

@@ -1,4 +1,4 @@
-import BanFurture from '../../../mdx/trade/banFurture.mdx';
+import BanFurture from '../../../mdx/thinking/banFurture.mdx';
 
 const Page: React.FC = () => {
   return <BanFurture />

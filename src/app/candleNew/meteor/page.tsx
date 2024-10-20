@@ -1,5 +1,5 @@
 import React from 'react';
-import MdxComponent from '../../../mdx/trader2/蜡烛图新解/06-流星线.mdx';
+import MdxComponent from '../../../mdx/trader/蜡烛图新解/06-流星线.mdx';
 
 const Page: React.FC = () => {
   return <MdxComponent />

@@ -1,6 +1,9 @@
+import React from 'react';
 
-export default function Home() {
-  return <div>
-    dashboard
-  </div>
-}
+import MdxComponent from '../../mdx/thinking/tradeThinking.mdx';
+
+const Page: React.FC = () => {
+  return <MdxComponent />
+};
+
+export default Page

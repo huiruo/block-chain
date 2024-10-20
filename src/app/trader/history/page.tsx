@@ -1,6 +1,6 @@
 import React from 'react';
 
-import MdxComponent from '../../../mdx/trader2/00-止损.mdx';
+import MdxComponent from '../../../mdx/trader/02-交易纪录.mdx';
 
 const Page: React.FC = () => {
   return <MdxComponent />

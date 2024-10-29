@@ -19,6 +19,7 @@ export const sidebar: ISidebar[] = [
       { href: "/crypto/btcBelievers", label: "BTC Believers" },
       { href: "/crypto/meme", label: "Meme trade" },
       { href: "/crypto/tech1", label: "Tech" },
+      { href: "/crypto/btcUniqueDiversifier", label: "btc Unique Diversifier" },
     ]
   },
   {

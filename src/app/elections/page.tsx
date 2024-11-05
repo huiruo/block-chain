@@ -1,4 +1,5 @@
 import React from 'react';
+import Elections from '../../mdx/crypto/elections.mdx';
 
 const Page: React.FC = () => {
   return <div style={{marginTop: '60px'}}>
@@ -11,6 +12,8 @@ const Page: React.FC = () => {
         height: '60vh'
       }}
     />
+
+  <Elections />
   </div>
 };
 

@@ -30,6 +30,7 @@ export const sidebar: ISidebar[] = [
       { href: "/thinking/thinking1", label: "Thinking" },
       { href: "/thinking/invest", label: "Invest" },
       { href: "/thinking/banFurture", label: "BanFurture" },
+      { href: "/thinking/btcTradeExperience", label: "BTC Trade Experience" },
     ]
   },
   {

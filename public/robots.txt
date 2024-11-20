@@ -2,22 +2,27 @@ User-agent: *
 Disallow: 
 
 Allow: /dashboard
+Allow: /business/main
+
 Allow: /crypto
 Allow: /crypto/btcAddress
 Allow: /crypto/btcBelievers
 Allow: /crypto/meme
 Allow: /crypto/tech1
 Allow: /crypto/btcUniqueDiversifier
+
 Allow: /thinking
 Allow: /thinking/thinking1
 Allow: /thinking/invest
 Allow: /thinking/banFurture
+
 Allow: /trader
 Allow: /trader/neverWrong
 Allow: /trader/opportunity
 Allow: /trader/stopLoss
 Allow: /trader/volume
 Allow: /trader/history
+
 Allow: /candleTech
 Allow: /candleTech/excerpt
 Allow: /candleTech/reversal

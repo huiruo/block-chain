@@ -11,6 +11,14 @@ export const sidebar: ISidebar[] = [
     href: '/dashboard',
   },
   {
+    label: 'Business',
+    href: '/business',
+    type: 'category',
+    items: [
+      { href: "/business/main", label: "Main" },
+    ]
+  },
+  {
     label: 'Crypto',
     href: '/crypto',
     type: 'category',

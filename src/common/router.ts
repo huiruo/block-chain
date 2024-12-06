@@ -7,9 +7,13 @@ export interface ISidebar {
 
 export const sidebar: ISidebar[] = [
   {
-    label: 'Dashboard',
-    href: '/dashboard',
+    label: 'Index',
+    href: '/',
   },
+  // {
+  //   label: 'Dashboard',
+  //   href: '/dashboard',
+  // },
   {
     label: 'Business',
     href: '/business',

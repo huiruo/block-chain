@@ -1,6 +1,7 @@
-import styles from "./page.module.css";
+import MdxComponent from '../mdx/thinking/tradeThinking.mdx';
 
 export default function Home() {
-  return <main className={styles.main}>
-    </main>
+  return <main>
+    <MdxComponent />
+  </main>
 }

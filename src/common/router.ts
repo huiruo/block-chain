@@ -12,7 +12,7 @@ export const sidebar: ISidebar[] = [
   },
   { href: "/thinking/thinking1", label: "Thinking" },
   // { href: "/thinking/invest", label: "Invest" },
-  { href: "/thinking/btcTradeExperience", label: "BTC Trade Experience" },
+  // { href: "/thinking/btcTradeExperience", label: "BTC Trade Experience" },
   { href: "/thinking/btc2024", label: "BTC 2024" },
   { href: "/crypto/btcBelievers", label: "BTC Believers" },
   { href: "/crypto/btcUniqueDiversifier", label: "BTC Unique Diversifier" },

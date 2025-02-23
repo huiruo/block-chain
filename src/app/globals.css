@@ -99,10 +99,16 @@ a {
 
 h2 {
   margin: 16px 0px 4px 0px;
+  color: #ec4899;
 }
 
 h3 {
   margin: 10px 0px 4px 0px;
+}
+
+li::marker {
+  white-space: nowrap;
+  color: #ec4899;
 }
 
 p {

@@ -27,19 +27,19 @@ export const sidebar: ISidebar[] = [
       { href: "/crypto/tech1", label: "Tech" },
     ]
   },
-  /*
   {
     label: 'Thinking',
     href: '/thinking',
     type: 'category',
     items: [
-      { href: "/thinking/thinking1", label: "Thinking" },
       { href: "/thinking/invest", label: "Invest" },
+      { href: "/thinking/thinking1", label: "Thinking" },
       { href: "/thinking/banFurture", label: "BanFurture" },
       { href: "/thinking/btcTradeExperience", label: "BTC Trade Experience" },
       { href: "/thinking/btc2024", label: "BTC 2024" },
     ]
   },
+  /*
   {
     label: 'Dashboard',
     href: '/dashboard',

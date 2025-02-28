@@ -39,6 +39,14 @@ export const sidebar: ISidebar[] = [
       { href: "/thinking/btc2024", label: "BTC 2024" },
     ]
   },
+  {
+    label: 'Options',
+    href: '/options',
+    type: 'category',
+    items: [
+      { href: "/options/1", label: "Options 1" },
+    ]
+  },
   /*
   {
     label: 'Dashboard',

@@ -1,0 +1,52 @@
+
+## 哪里查询
+https://dune.com/queries/5307268/8706778
+
+```sql
+WITH
+  orders_filled AS (
+    SELECT
+      maker,
+      taker,
+      evt_block_time
+    FROM
+      polymarket_polygon.CTFExchange_evt_OrderFilled
+    WHERE
+      evt_block_time > CURRENT_TIMESTAMP - INTERVAL '3' MONTH
+  )
+SELECT
+  maker,
+  taker,
+  COUNT(*) AS num_orders,
+  DATE_TRUNC('day', evt_block_time) AS day
+FROM
+  orders_filled
+WHERE
+  (CAST(maker AS VARCHAR) LIKE '0x80cd%' AND CAST(maker AS VARCHAR) LIKE '%0273')
+  OR (CAST(taker AS VARCHAR) LIKE '0x80cd%' AND CAST(taker AS VARCHAR) LIKE '%0273')
+GROUP BY
+  maker,
+  taker,
+  DATE_TRUNC('day', evt_block_time)
+ORDER BY
+  day DESC,
+  num_orders DESC
+LIMIT 100;
+
+```
+
+## me
+https://polymarket.com/profile/0x46A933cAf9934cF10b0ccd2388a9a765c671b0bE
+
+## md
+
+https://polymarket.com/profile/0x80cd8310aa624521e9e1b2b53b568cafb0ef0273?tab=activity
+
+链上：
+https://polygonscan.com/address/0x80cd8310aa624521e9e1b2b53b568cafb0ef0273#asset-multichain
+
+历史记录：
+
+https://data-api.polymarket.com/trades?user=0x80cd8310aa624521e9e1b2b53b568cafb0ef0273&limit=100&offset=0&takerOnly=false
+
+https://data-api.polymarket.com/positions?user=0x80cd8310aa624521e9e1b2b53b568cafb0ef0273

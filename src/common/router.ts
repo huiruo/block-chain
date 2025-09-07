@@ -10,6 +10,15 @@ export const sidebar: ISidebar[] = [
     label: 'Index',
     href: '/',
   },
+  {
+    label: 'trade',
+    href: '/trade',
+    type: 'category',
+    items: [
+      { href: "/trade/trade", label: "trade" },
+    ]
+  },
+
   { href: "/thinking/thinking1", label: "Thinking" },
   // { href: "/thinking/invest", label: "Invest" },
   // { href: "/thinking/btcTradeExperience", label: "BTC Trade Experience" },

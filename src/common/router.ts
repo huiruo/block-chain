@@ -16,6 +16,7 @@ export const sidebar: ISidebar[] = [
     type: 'category',
     items: [
       { href: "/trade/trade", label: "trade" },
+      { href: "/trade/trade2", label: "trade2" }
     ]
   },
 

@@ -1,64 +1,59 @@
 export interface ISidebar {
-  href: string
-  label: string
-  type?: 'category' | 'link'
-  items?: ISidebar[]
+  href: string;
+  label: string;
+  type?: "category" | "link";
+  items?: ISidebar[];
 }
 
 export const sidebar: ISidebar[] = [
   {
-    label: 'Index',
-    href: '/',
+    label: "Index",
+    href: "/",
   },
   {
-    label: 'trade',
-    href: '/trade',
-    type: 'category',
+    label: "trade",
+    href: "/trade",
+    type: "category",
     items: [
       { href: "/trade/action", label: "Action" },
       { href: "/trade/realTrade", label: "Real Trade" },
       { href: "/trade/trade", label: "trade" },
       { href: "/trade/trade2", label: "trade2" },
-      { href: "/trade/trade202509", label: "trade202509" }
-    ]
+      { href: "/trade/trade202509", label: "trade202509" },
+    ],
   },
-
   { href: "/thinking/thinking1", label: "Thinking" },
-  // { href: "/thinking/invest", label: "Invest" },
-  // { href: "/thinking/btcTradeExperience", label: "BTC Trade Experience" },
   { href: "/thinking/btc2024", label: "BTC 2024" },
   { href: "/crypto/btcBelievers", label: "BTC Believers" },
   { href: "/crypto/btcUniqueDiversifier", label: "BTC Unique Diversifier" },
   { href: "/thinking/banFurture", label: "Ban Furture" },
   {
-    label: 'Crypto',
-    href: '/crypto',
-    type: 'category',
+    label: "Crypto",
+    href: "/crypto",
+    type: "category",
     items: [
       { href: "/crypto/btcAddress", label: "Btc Address" },
       { href: "/crypto/meme", label: "Meme trade" },
       { href: "/crypto/tech1", label: "Tech" },
-    ]
+    ],
   },
   {
-    label: 'Thinking',
-    href: '/thinking',
-    type: 'category',
+    label: "Thinking",
+    href: "/thinking",
+    type: "category",
     items: [
       { href: "/thinking/invest", label: "Invest" },
       { href: "/thinking/thinking1", label: "Thinking" },
       { href: "/thinking/banFurture", label: "BanFurture" },
       { href: "/thinking/btcTradeExperience", label: "BTC Trade Experience" },
       { href: "/thinking/btc2024", label: "BTC 2024" },
-    ]
+    ],
   },
   {
-    label: 'Options',
-    href: '/options',
-    type: 'category',
-    items: [
-      { href: "/options/1", label: "Options 1" },
-    ]
+    label: "Options",
+    href: "/options",
+    type: "category",
+    items: [{ href: "/options/1", label: "Options 1" }],
   },
   /*
   {
@@ -67,29 +62,27 @@ export const sidebar: ISidebar[] = [
   },
   */
   {
-    label: 'Business',
-    href: '/business',
-    type: 'category',
-    items: [
-      { href: "/business/main", label: "Main" },
-    ]
+    label: "Business",
+    href: "/business",
+    type: "category",
+    items: [{ href: "/business/main", label: "Main" }],
   },
   {
-    label: 'Trader',
-    href: '/trader',
-    type: 'category',
+    label: "Trader",
+    href: "/trader",
+    type: "category",
     items: [
       { href: "/trader/neverWrong", label: "NeverWrong" },
       { href: "/trader/opportunity", label: "Opportunity" },
       { href: "/trader/stopLoss", label: "StopLoss" },
       { href: "/trader/volume", label: "Volume" },
       { href: "/trader/history", label: "History" },
-    ]
+    ],
   },
   {
-    label: 'Candle tech',
-    href: '/candleTech',
-    type: 'category',
+    label: "Candle tech",
+    href: "/candleTech",
+    type: "category",
     items: [
       { href: "/candleTech/excerpt", label: "节选" },
       { href: "/candleTech/reversal", label: "反转形态" },
@@ -118,12 +111,12 @@ export const sidebar: ISidebar[] = [
       { href: "/candleTech/riseDown", label: "上升-下降" },
       { href: "/candleTech/breakup", label: "分手线" },
       { href: "/candleTech/candleVolume", label: "蜡烛图与交易量" },
-    ]
+    ],
   },
   {
-    label: 'Candle new',
-    href: '/candleNew',
-    type: 'category',
+    label: "Candle new",
+    href: "/candleNew",
+    type: "category",
     items: [
       { href: "/trader/invest", label: "Invest" },
       { href: "/candleNew/trend", label: "趋势" },
@@ -140,14 +133,12 @@ export const sidebar: ISidebar[] = [
       { href: "/candleNew/pregnant", label: "包孕形态" },
       { href: "/candleNew/dusk", label: "黄昏星" },
       { href: "/candleNew/venus", label: "启明星" },
-    ]
+    ],
   },
   {
-    label: 'Stock',
-    href: '/stock',
-    type: 'category',
-    items: [
-      { href: "/stock/analyze", label: "Analyze" },
-    ]
+    label: "Stock",
+    href: "/stock",
+    type: "category",
+    items: [{ href: "/stock/analyze", label: "Analyze" }],
   },
-]
+];

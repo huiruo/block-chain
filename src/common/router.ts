@@ -20,6 +20,7 @@ export const sidebar: ISidebar[] = [
       { href: "/trade/trade", label: "trade" },
       { href: "/trade/trade2", label: "trade2" },
       { href: "/trade/trade202509", label: "trade202509" },
+      { href: "/trade/tradersDifferent", label: "Traders Different" },
     ],
   },
   { href: "/thinking/thinking1", label: "Thinking" },

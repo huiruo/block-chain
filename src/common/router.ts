@@ -11,11 +11,23 @@ export const sidebar: ISidebar[] = [
     href: "/",
   },
   {
+    label: "poly-trade",
+    href: "/polyTrade",
+    type: "category",
+    items: [
+      { href: "/polyTrade/experience", label: "Experience" },
+      { href: "/polyTrade/intuition", label: "Intuition" },
+      { href: "/polyTrade/slowIsFast", label: "Slow Is Fast" },
+      { href: "/polyTrade/profitHurdle", label: "Profit Hurdle" },
+      { href: "/polyTrade/lossReview", label: "Loss Review" },
+      { href: "/polyTrade/action", label: "Action" },
+    ],
+  },
+  {
     label: "trade",
     href: "/trade",
     type: "category",
     items: [
-      { href: "/trade/action", label: "Action" },
       { href: "/trade/allincrypto", label: "allincrypto 熬鹰参考" },
       { href: "/trade/allincryptoTest", label: "allincrypto Test" },
       { href: "/trade/realTrade", label: "Real Trade" },

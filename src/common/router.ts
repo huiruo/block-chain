@@ -11,15 +11,19 @@ export const sidebar: ISidebar[] = [
     href: "/",
   },
   {
+    label: "Loss Review",
+    href: "/polyTrade/lossReview",
+  },
+  {
     label: "poly-trade",
     href: "/polyTrade",
     type: "category",
     items: [
+      // { href: "/polyTrade/lossReview", label: "Loss Review" },
       { href: "/polyTrade/experience", label: "Experience" },
       { href: "/polyTrade/intuition", label: "Intuition" },
       { href: "/polyTrade/slowIsFast", label: "Slow Is Fast" },
       { href: "/polyTrade/profitHurdle", label: "Profit Hurdle" },
-      { href: "/polyTrade/lossReview", label: "Loss Review" },
       { href: "/polyTrade/action", label: "Action" },
     ],
   },

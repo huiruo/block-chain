@@ -1,4 +1,4 @@
-import Action from '../../../mdx/polyTrade/intuition.mdx';
+import Action from '../../../mdx/trade/experience.mdx';
 
 const Page: React.FC = () => {
   return <Action />

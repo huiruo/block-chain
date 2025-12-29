@@ -1,4 +1,4 @@
-import MdxComponent from '../mdx/thinking/tradeThinking.mdx';
+import MdxComponent from '../mdx/trade/strategy2026.mdx';
 
 export default function Home() {
   return <main>

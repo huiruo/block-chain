@@ -15,6 +15,7 @@ export const sidebar: ISidebar[] = [
     href: "/trade",
     type: "category",
     items: [
+      { href: "/trade/tradeThinking", label: "tradeThinking" },
       { href: "/trade/experience", label: "Experience" },
       { href: "/trade/intuition", label: "Intuition" },
       { href: "/trade/allincrypto", label: "allincrypto 熬鹰参考" },
